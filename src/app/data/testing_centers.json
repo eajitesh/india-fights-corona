@@ -1,0 +1,317 @@
+{
+    "states": [
+        {
+            "state": "Maharashtra",
+            "center": "Indira Gandhi Government Medical College, Nagpur",
+            "phone": "0712 272 5423"
+        },
+        {
+            "state": "Maharashtra",
+            "center": "Kasturba Hospital for Infectious Diseases, Mumbai",
+            "phone": ""
+        },
+        {
+            "state": "Maharashtra",
+            "center": "NIV Mumbai Unit",
+            "phone": "094210 18275"
+        },
+        {
+            "state": "Rajasthan",
+            "center": "Sawai Man Singh Medical College, Jaipur",
+            "phone": "0141 270 8836"
+        },
+        {
+            "state": "Rajasthan",
+            "center": "Dr. S.N Medical College, Jodhpur",
+            "phone": "0291 2434374 - 77"
+        },
+        {
+            "state": "Rajasthan",
+            "center": "Jhalawar Medical College, Jhalawar",
+            "phone": "07432 233 388"
+        },
+        {
+            "state": "Rajasthan",
+            "center": "SP Med. College, Bikaner",
+            "phone": "0151 222 0115"
+        },
+        {
+            "state": "Rajasthan",
+            "center": "RNT Medical College, Udaipur",
+            "phone": "0294 241 8258"
+        },
+        {
+            "state": "Tamil nadu",
+            "center": "King's Institute of Preventive Medicine & Research, Chennai",
+            "phone": "044 2250 1520"
+        },
+        {
+            "state": "Tamil nadu",
+            "center": "Government Medical College, Theni",
+            "phone": ""
+        },
+        {
+            "state": "Tamil nadu",
+            "center": "Tirunelveli Medical College, Tirunelveli",
+            "phone": ""
+        },
+        {
+            "state": "Tamil nadu",
+            "center": "Govt. Medical college, Thiruvarur",
+            "phone": ""
+        },
+        {
+            "state": "Uttar Pradesh",
+            "center": "King's George Medical University, Lucknow",
+            "phone": ""
+        },
+        {
+            "state": "Uttar Pradesh",
+            "center": "Institute of Medical Sciences, Banaras Hindu University, Varanasi",
+            "phone": ""
+        },
+        {
+            "state": "Uttar Pradesh",
+            "center": "Jawaharlal Nehru Medical College, Aligarh",
+            "phone": ""
+        },
+        {
+            "state": "Uttarakhand",
+            "center": "Government Medical College, Haldwani",
+            "phone": ""
+        },
+        {
+            "state": "West Bengal",
+            "center": "National Institute of Cholera and Enteric Diseases, Kolkata",
+            "phone": ""
+        },
+        {
+            "state": "West Bengal",
+            "center": "IPGMER, Kolkata",
+            "phone": ""
+        },
+        {
+            "state": "Madhya Pradesh",
+            "center": "All India Institute Medical Sciences, Bhopal",
+            "phone": ""
+        },
+        {
+            "state": "Madhya Pradesh",
+            "center": "National Institute of Research in Tribal Health (NIRTH), Jabalpur",
+            "phone": ""
+        },
+        {
+            "state": "Kerala",
+            "center": "National Institute of Virology Field Unit",
+            "phone": ""
+        },
+        {
+            "state": "Kerala",
+            "center": "Govt. Medical College, Thriuvananthapuram",
+            "phone": ""
+        },
+        {
+            "state": "Kerala",
+            "center": "Govt. Medical College, Kozhikhode",
+            "phone": ""
+        },
+        {
+            "state": "Kerala",
+            "center": "Govt. Medical College, Thrissur",
+            "phone": ""
+        },
+        {
+            "state": "Karnataka",
+            "center": "Bangalore Medical College & Research Institute, Bangalore",
+            "phone": ""
+        },
+        {
+            "state": "Karnataka",
+            "center": "National Institute of Virology Field Unit Bangalore",
+            "phone": ""
+        },
+        {
+            "state": "Karnataka",
+            "center": "Mysore Medical College & Research Institute, Mysore",
+            "phone": ""
+        },
+        {
+            "state": "Karnataka",
+            "center": "Hassan Inst. of Med. Sciences, Hassan",
+            "phone": ""
+        },
+        {
+            "state": "Karnataka",
+            "center": "Shimoga Inst. of Med. Sciences, Shivamogga",
+            "phone": ""
+        },
+        {
+            "state": "Gujarat",
+            "center": "BJ Medical College, Ahmedabad",
+            "phone": ""
+        },
+        {
+            "state": "Gujarat",
+            "center": "M.P.Shah Government Medical College, Jamnagar",
+            "phone": ""
+        },
+        {
+            "state": "Haryana",
+            "center": "BPS Govt Medical College, Sonipat",
+            "phone": ""
+        },
+        {
+            "state": "Haryana",
+            "center": "Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences, Rohtak",
+            "phone": ""
+        },
+        {
+            "state": "Himachal pradesh",
+            "center": "Indira Gandhi Medical College, Shimla, Himachal Pradesh",
+            "phone": ""
+        },
+        {
+            "state": "Himachal Pradesh",
+            "center": "Dr. Rajendra Prasad Govt. Med. College, Kangra, Tanda",
+            "phone": ""
+        },
+        {
+            "state": "Jharkhand",
+            "center": "MGM Medical College, Jamshedpur",
+            "phone": ""
+        },
+        {
+            "state": "Meghalaya",
+            "center": "NEIGRI of Health and Medical Sciences, Shillong",
+            "phone": ""
+        },
+        {
+            "state": "Manipur",
+            "center": "J N Inst. of Med. Sciences Hospital, Imphal-East, Manipur",
+            "phone": ""
+        },
+        {
+            "state": "Odisha",
+            "center": "Regional Medical Research Center, Bhubaneswar",
+            "phone": ""
+        },
+        {
+            "state": "Punjab",
+            "center": "Government Medical College, Patiala",
+            "phone": ""
+        },
+        {
+            "state": "Punjab",
+            "center": "Government Medical College, Amritsar",
+            "phone": ""
+        },
+        {
+            "state": "Telangana",
+            "center": "Gandhi Medical College, Secunderabad",
+            "phone": ""
+        },
+        {
+            "state": "Telangana",
+            "center": "Osmania Medical College, Hyderabad",
+            "phone": ""
+        },
+        {
+            "state": "Tripura",
+            "center": "Government Medical College, Agartala",
+            "phone": ""
+        },
+        {
+            "state": "Bihar",
+            "center": "Rajendra Memorial Research Institute of Medical Sciences, Patna",
+            "phone": ""
+        },
+        {
+            "state": "Chhattisgarh",
+            "center": "All India Institute Medical Sciences, Raipur",
+            "phone": ""
+        },
+        {
+            "state": "Andhra pradesh",
+            "center": "Sri Venkateswara Institute of Medical Sciences, Tirupati",
+            "phone": ""
+        },
+        {
+            "state": "Andhra pradesh",
+            "center": "Andhra Medical College, Visakhapatnam",
+            "phone": ""
+        },
+        {
+            "state": "Andhra pradesh",
+            "center": "Rangaraya Medical College, Kakinada",
+            "phone": ""
+        },
+        {
+            "state": "Andhra pradesh",
+            "center": "GMC, Anantapur",
+            "phone": ""
+        },
+        {
+            "state": "Assam",
+            "center": "Gauhati Medical College, Guwahati",
+            "phone": ""
+        },
+        {
+            "state": "Assam",
+            "center": "Regional Medical Research Center, Dibrugarh",
+            "phone": ""
+        },
+        {
+            "state": "Assam",
+            "center": "Silchar Medical College, Silchar",
+            "phone": ""
+        },
+        {
+            "state": "Assam",
+            "center": "Jorhat Medical College, Jorhat",
+            "phone": ""
+        }
+    ],
+    "uts" : [
+        {
+            "ut": "Delhi",
+            "center": "All India Institute Medical Sciences (AIIMS)",
+            "phone": ""
+        },
+        {
+            "ut": "Delhi",
+            "center": "National Centre for Disease Control (NCDC)",
+            "phone": ""
+        },
+        {
+            "ut": "Jammu and kashmir",
+            "center": "Sher-e- Kashmir Institute of Medical Sciences, Srinagar",
+            "phone": ""
+        },
+        {
+            "ut": "Jammu and kashmir",
+            "center": "Government Medical College, Jammu",
+            "phone": ""
+        },
+        {
+            "ut": "Jammu and kashmir",
+            "center": "Government Medical College, Srinagar",
+            "phone": ""
+        },
+        {
+            "ut": "Puducherry",
+            "center": "Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry",
+            "phone": ""
+        },
+        {
+            "ut": "Chandigarh",
+            "center": "Post Graduate Institute of Medical Education & Research, Chandigarh",
+            "phone": ""
+        },
+        {
+            "ut": "Andaman and nicobar islands",
+            "center": "Regional Medical Research Centre, Port Blair, Andaman and Nicobar",
+            "phone": ""
+        }
+    ]
+
+}

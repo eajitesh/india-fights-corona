@@ -1,0 +1,27 @@
+<!-- <select name="state" class="rounded-inputs20 select-select col-md-3" (change)="onChange($event.target.value)">
+  <option *ngFor="let stateName of states"  [value]="stateName">{{stateName}}</option>
+</select> -->
+<div style="text-align: right;">
+<div class="dropdown  dropright">
+  <button class="btn  btn-sm btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select State
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button  *ngFor="let stateName of states" class="dropdown-item" type="button" 
+    (click)="onStateClick($event)" value="{{stateName}}">{{stateName}}</button>
+  </div>
+</div>
+</div>
+<div style="padding-top:10px">
+  <div class="col-sm-12">
+  <div style="display: block">
+    <canvas baseChart  width="600" height="510"
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+    </canvas>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div *ngIf="loadContent">
+	<form [formGroup]="form">
+		
+    <ng-multiselect-dropdown #multiSelect
+      [placeholder]="'Select States'" 
+      [data]="data" 
+      [formControl]="f.name" 
+      [settings]="settings"
+      [disabled]="false"
+      (onFilterChange)="onFilterChange($event)"
+      (onDropDownClose)="onDropDownClose($event)"
+      (onSelect)="onItemSelect($event)" 
+      (onDeSelect)="onDeSelect($event)"
+      (onSelectAll)="onSelectAll($event)"
+      (onDeSelectAll)="onDeSelectAll($event)">
+		</ng-multiselect-dropdown>
+
+    <span *ngIf="f?.name?.errors?.required" style="color: red;">
+      State is required
+    </span>
+  </form>
+</div>
+
+<div class="row">
+  <div class="col-sm-10">
+    <div style="display: block;">
+      <canvas baseChart width="400" height="280"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
+  </div>
+</div>

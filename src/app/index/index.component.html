@@ -1,0 +1,354 @@
+<!--
+<div  style="background-color:#E8F8F5;margin-top: 10px;color: #000000"   class="jumbotron">
+  <hello name="{{ name }}"></hello>
+  <p class="lead">Stay Healthy and Safe with the latest updates in your neighbourhood, city, state and India</p>
+  <hr class="my-4">
+</div>
+<app-news-ticker></app-news-ticker>
+-->
+
+<h1  style="padding-top:25px">Covid-19 India</h1>
+<hr/>
+<div class="alert alert-danger" role="alert">
+  <strong>Central Helpline Number</strong> for coronavirus: <strong>+91-11-23978046</strong>, Toll Free No: <strong>1075</strong> - Helpline Email ID for coronavirus <strong><a href="mailto:ncov2019@gov.in">ncov2019@gov.in</a>, <a href="mailto:ncov2019@gmail.com">ncov2019@gmail.com</a></strong>. For <strong>psycho social support</strong>, call NIMHANS Toll Free <strong>#080-46110007</strong> 
+</div>
+<!--
+<img src={{coronaImage}}>
+-->
+<div style="padding-top: 5px">
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3 box-shadow">
+            <div class="card-header  text-white bg-warning">
+              <h4 class="my-0 font-weight-normal">Confirmed Cases</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">{{totalInfected}}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3 box-shadow">
+            <div class="card-header  text-white bg-success ">
+              <h4 class="my-0 font-weight-normal">Discharged Cases</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">{{totalDischarged}}</h1>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3 box-shadow">
+            <div class="card-header text-white bg-danger">
+              <h4 class="my-0 font-weight-normal">Confirmed Deaths</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">{{totalDeath}}</h1>
+            
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card mb-3 box-shadow">
+          <div class="card-header  text-white bg-dark">
+            <h4 class="my-0 font-weight-normal">Active Cases</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{totalActiveCases}}</h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wh-sRmTWGTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+</div>
+<div style="font-size:12px;margin:0px; padding:0px"><strong>Last Updated</strong> {{lastUpdated}}; Data crowdsourced from <a href="https://www.mohfw.gov.in/" target="_blank">MoHFW Govt of India</a>,  <a href="https://www.indiatoday.in/" target="_blank">indiatoday.com</a>, <a href="https://www.news18.in/" target="_blank">news18.com</a> & other Indian news websites</div>
+<div class="row" style="padding-top:15px">
+   <div class="col-md-4">
+    <div class="card">
+      <app-daily-histogram></app-daily-histogram>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <app-daily-roc></app-daily-roc>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <app-daily-line-chart></app-daily-line-chart>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top:15px">
+  
+  <div class="col-md-4">
+   <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Daily Cured & Death Cases (Cumulative)</strong>
+      </div>
+      <div class="card-body">
+        <app-india-daily-discharged-death></app-india-daily-discharged-death>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Daily Rate of Recovered Cases</strong>
+      </div>
+      <div class="card-body">
+        <app-recovery-rate></app-recovery-rate>
+      </div>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Daily Cured to Death Ratio</strong>
+      </div>
+      <div class="card-body">
+        <app-india-daily-discharged-death-ratio></app-india-daily-discharged-death-ratio>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+<div class="row" style="padding-top:15px">
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Rate of Confirmed Cases Vs Testing</strong>
+      </div>
+      <div class="card-body">
+        <app-testing-positive-rate></app-testing-positive-rate>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Weekly Confirmed Cases</strong>
+      </div>
+      <div class="card-body">
+        <app-weekly-line-chart></app-weekly-line-chart>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Monthly Confirmed Cases</strong>
+      </div>
+      <div class="card-body">
+        <app-monthly-line-chart></app-monthly-line-chart>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="row" style="padding-top:15px">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Days taken to Double Infected Cases</strong>
+      </div>
+      <div class="card-body">
+        <app-days-to-double></app-days-to-double>
+      </div>      
+    </div>
+    <div style="padding-top:10px">
+      <iframe width="420" height="230" src="https://www.youtube.com/embed/SoAp7sX65TQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-8">
+      <div class="card">
+      <div class="card-header bg-secondary">
+        <strong class="text-white">Comparison of India with other countries</strong>
+      </div>
+      <div class="card-body">
+          <app-comparison-infected-rate></app-comparison-infected-rate>
+       </div>
+      </div>
+    </div>
+</div>
+<div class="row" style="padding-top:15px">
+   
+    
+</div>
+
+<h1  style="padding-top:60px">Covid-19 Indian States</h1>
+<hr/>
+<div class="alert alert-danger" role="alert">
+  <strong>States Helpline Number</strong> for coronavirus: For most of the states, the number is <strong>104</strong>. If 104 does not work, click <a href="/helpline">here</a> to look for specific numbers for different states.
+</div>
+<div class="row"  style="padding-top:10px">
+  <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-secondary">
+          <a href="/india-fights-corona" class="text-white"><strong>State-wise Daily Confirmed Cases</strong></a>
+        </div>
+        <div class="card-body">
+          <app-daily-state-histogram></app-daily-state-histogram>
+        </div>
+      </div>
+      <div style="padding-top:10px">
+        <iframe width="420" height="210" src="https://www.youtube.com/embed/QiBeywmJoRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+  <div class="col-md-8">
+      <div class="card">
+        <div class="card-header bg-secondary">
+          <a href="/india-fights-corona" class="text-white"><strong>State-wise Confirmed Cases (Cumulative)</strong></a>
+        </div>
+        <div class="card-body">
+          <app-daily-states-confirmed-cases ></app-daily-states-confirmed-cases>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="row" style="padding-top:20px">
+   <div class="col-md-6">
+      <div class="card" style="padding-top:0px">
+            <div class="card-header bg-secondary">
+              <a href="/india-fights-corona" class="text-white"><strong>State-wise Distribution (Confirmed Cases)</strong></a>
+            </div>
+            <div class="card-body">
+              <app-states-confirmed-pie></app-states-confirmed-pie>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" style="padding-top:0px">
+        <div class="card-header bg-secondary text-white">
+          <strong>State-wise Recovery Status</strong>
+        </div>
+        <div class="card-body">
+          <app-recovery-status-states></app-recovery-status-states>
+        </div>
+      </div>      
+    </div>
+</div>
+<div class="row" style="padding-top:20px">
+   <div class="col-md-6">
+     <div class="card" style="padding-top:0px">
+        <div class="card-header bg-secondary text-white">
+          <strong>State-wise Death (Cumulative)</strong>
+        </div>
+        <div class="card-body">
+          <app-cumulative-deaths-states></app-cumulative-deaths-states>
+        </div>
+      </div>     
+   </div>
+</div>
+<div class="row" style="padding-top:15px">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <a href="/india-fights-corona" class="text-white"><strong>Zone-wise Confirmed Cases (Cumulative)</strong></a>
+      </div>
+      <div class="card-body">
+        <app-daily-states></app-daily-states>
+      </div>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <a href="/india-fights-corona" class="text-white"><strong>Zone-wise Recovered Cases (Cumulative)</strong></a>
+      </div>
+      <div class="card-body">
+        <app-daily-states-recovered></app-daily-states-recovered>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        <a href="/india-fights-corona" class="text-white"><strong>Zone-wise Death Cases (Cumulative)</strong></a>
+      </div>
+      <div class="card-body">
+        <app-daily-states-death></app-daily-states-death>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row"  style="padding-top:10px;padding-bottom:15px;padding-left:15px">
+<div style="font-size:10px"><strong>North Zone</strong> (Delhi, Himachal Pradesh, Punjab, Haryana, J&K, Ladakhm, Chandigarh); <strong>East Zone</strong> (West bengal, Jharkhand, Bihar, Odisha, Assam, Tripura, Mizoram, Manipur); <strong>South Zone</strong> (Telangana, Andhra Pradesh, Kerala, Karnataka, Tamil Nadu); <strong>West Zone</strong> (Maharastra, Gujarat, Goa); <strong>Central Zone</strong> (Madhya Pradesh, Uttar Pradesh, Rajasthan, Uttarakhand, Chattisgarh)</div>
+</div>
+<h1  style="padding-top:60px">Educate Yourself on Corona</h1>
+<hr/>
+<div class="row"  style="padding-top:0px;padding-bottom:15px;padding-left:15px"><strong>List of educational videos to help us learn about Corona. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/videos" target="_blank">Thanks to WHO for creating these videos!</a></strong></div>
+<div class="row">
+  <div class="card col-md-4">
+    <div class="card-body">
+      <iframe width="400" height="215" src="https://www.youtube.com/embed/1APwq1df6Mw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="card col-md-4">
+    <div class="card-body">
+    <iframe width="400" height="215" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="card col-md-4">
+    <div class="card-body">
+    <iframe width="400" height="215" src="https://www.youtube.com/embed/8c_UJwLq8PI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div class="row pull-right"  style="padding-top:15px;padding-left:15px;">
+  <div class="col-md-12 text-right" style="padding-right:30px"><a href="/corona-fun">More Videos</a></div>
+</div>
+<h1  style="padding-top:60px">Corona Fun - Stay @ Home, Stay Smiling</h1>
+<hr/>
+<div class="row"  style="padding-top:0px;padding-bottom:15px;padding-left:15px"><strong>Library of interesting videos to help us smile in these difficult times. Thanks to the creators!</strong></div>
+<div class="row">
+  <div class="card col-md-4">
+    <div class="card-body">
+      <iframe width="400" height="215" src="https://www.youtube.com/embed/nmUXntGlqFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="card col-md-4">
+    <div class="card-body">
+    <iframe width="400" height="215" src="https://www.youtube.com/embed/ouSoXHc1XOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="card col-md-4">
+    <div class="card-body">
+    <iframe width="400" height="215" src="https://www.youtube.com/embed/vTSZwlkx8_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div class="row pull-right"  style="padding-top:15px;padding-left:15px;">
+  <div class="col-md-12 text-right" style="padding-right:30px"><a href="/corona-fun">More Videos</a></div>
+</div>
+<h1  style="padding-top:30px">Covid-19 World</h1>
+<hr/>
+<div class="row" style="padding-top:15px">
+  <div class="col-md-12">
+    <div class="card">
+      <p><iframe cheight="11" cwidth="9" height="800" scrolling="yes" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" width="100%"></iframe></p>
+    </div>
+  </div>
+  <!--
+  <div class="col-md-4">
+    
+    <div>
+    </div>
+  </div>
+  -->
+</div>

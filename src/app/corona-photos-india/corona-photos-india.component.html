@@ -1,0 +1,30 @@
+<h2 style="padding-top:20px">Corona Photos</h2>
+<hr/>
+<div class="row">
+  <div class="card"  *ngFor="let coronaImage of coronaImages; index as i;" style="margin:5px">
+    <div class="card-body">   
+      <img src={{coronaImage.url}} /> 
+    </div>
+  </div>
+  
+</div>
+<!--
+  <div class="row">
+  <div class="card col-md-3">
+    <div class="card-body">    
+    </div>
+  </div>
+  <div class="card col-md-3">
+    <div class="card-body">    
+    </div>
+  </div>
+  <div class="card col-md-3">
+    <div class="card-body">    
+    </div>
+  </div>
+  <div class="card col-md-3">
+    <div class="card-body">    
+    </div>
+  </div>
+</div>
+  -->

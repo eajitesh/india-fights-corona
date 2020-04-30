@@ -1,0 +1,119 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Testing Centers (129)</li>
+  </ol>
+</nav>
+<!-- <div *ngFor="let testing_center of testing_centers; index as i;">
+  {{testing_center.name}}
+</div> -->
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-top:10px">
+  <li class="nav-item">
+    <a class="nav-link active" id="govt-tab" data-toggle="tab" href="#govt" role="tab" aria-controls="govt"
+      aria-selected="true">Govt</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="private-tab" data-toggle="tab" href="#private" role="tab" aria-controls="private"
+      aria-selected="false">Private</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="govt" role="tabpanel" aria-labelledby="govt-tab">
+     <div style="padding-top:20px">
+        <h2>Govt Testing Centers (62)</h2>
+        <div class="row"  style="padding-top:20px">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                States Testing Centres
+              </div>
+              <div class="card-body">
+              <table class="table">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">States</th>
+                    <th scope="col">Centre Name</th>
+                  </tr>
+                  <tr *ngFor="let state of jsonStates; let i= index;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{state.state}}</td>
+                    <td>{{state.center}} <br/>{{state.phone}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                UT Testing Centres
+              </div>
+              <div class="card-body">
+              <table class="table">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Union Territories</th>
+                    <th scope="col">Centre Name</th>
+                  </tr>
+                  <tr *ngFor="let ut of jsonUTs; let i= index;">
+                    <th scope="col">{{i+1}}</th>
+                    <td>{{ut.ut}}</td>
+                    <td>{{ut.center}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>
+  <div class="tab-pane fade" id="private" role="tabpanel" aria-labelledby="private-tab">
+    <div style="padding-top:20px">
+        <h2>Private Testing Centers (67)</h2>
+        <div class="row"  style="padding-top:20px">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                States Testing Centres
+              </div>
+              <div class="card-body">
+              <table class="table">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">States</th>
+                    <th scope="col">Centre Name</th>
+                  </tr>
+                  <tr *ngFor="let state of jsonStatesPrivate; let i= index;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{state.state}}</td>
+                    <td>{{state.center}} <br/>{{state.phone}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                UT Testing Centres
+              </div>
+              <div class="card-body">
+              <table class="table">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Union Territories</th>
+                    <th scope="col">Centre Name</th>
+                  </tr>
+                  <tr *ngFor="let ut of jsonUTsPrivate; let i= index;">
+                    <th scope="col">{{i+1}}</th>
+                    <td>{{ut.ut}}</td>
+                    <td>{{ut.center}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>
+  </div>

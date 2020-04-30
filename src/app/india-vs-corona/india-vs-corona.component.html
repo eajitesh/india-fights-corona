@@ -1,0 +1,115 @@
+<h2 style="padding-top:20px">Corona Spread in Indian States</h2>
+<hr/>
+<p>Tracking Corona Virus Spread across different Indian states. Let's fight (<strong>Stay@Home</strong>) and defeat Corona every Single Day!
+  </p>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-top:10px">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+      aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="zones-tab" data-toggle="tab" href="#zones" role="tab" aria-controls="zones"
+      aria-selected="false">Zones Info</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+     <div>
+            <h3 style="padding-top:20px">State-wise Daily Confirmed Cases (Cumulative)</h3>
+            <div class="row" style="padding-top: 15px">
+              <div class="col-8">
+                    <div class="card">
+                      <app-daily-states-confirmed-cases></app-daily-states-confirmed-cases>
+                    </div>
+                  </div>
+                  <div class="col-4" style="padding-top:0px">
+        <table class="table table-hover">
+          <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">State</th>
+            <th scope="col">Confirmed Cases</th>
+          </tr>
+          </thead>
+          <tr *ngFor="let dci of dailyStatewiseInfo; let i= index;">
+            <th scope="row">{{i+1}}</th>
+            <td>{{dci[0]}}</td>
+            <td>{{dci[1]}}</td>
+          </tr>
+        </table>
+    </div>
+            </div>
+            <h3 style="padding-top:50px">Zone-wise Daily Confirmed Cases (Cumulative)</h3>
+            <div class="row" style="padding-top: 15px">
+                  <div class="col-6">
+                    <div class="card">
+                      <app-daily-states></app-daily-states>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Zones</th>
+                          <th  *ngFor="let day of dailyInfo" scope="col">{{day}}</th>
+                        </tr>
+                        </thead>
+                        <tr *ngFor="let dcc of dailyConfirmedCases; let i= index;">
+                          <th scope="row">{{i+1}}</th>
+                          <td>{{dcc.label}}</td>
+                          <td  *ngFor="let dccno of dcc.data">{{dccno}}</td>
+                        </tr>
+                      </table>
+                  </div>
+            </div>
+            <h3 style="padding-top:50px">Zone-wise Daily Recovered Cases (Cumulative)</h3>
+            <div class="row" style="padding-top: 15px">
+                <div class="col-6">
+                    <div class="card">
+                      <app-daily-states-recovered></app-daily-states-recovered>
+                    </div>
+                  </div>
+                <div class="col-6">
+                  <table class="table table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Zones</th>
+                      <th  *ngFor="let day of dailyInfo" scope="col">{{day}}</th>
+                    </tr>
+                    </thead>
+                    <tr *ngFor="let dcc of dailyRecoveredCases; let i= index;">
+                      <th scope="row">{{i+1}}</th>
+                      <td>{{dcc.label}}</td>
+                      <td  *ngFor="let dccno of dcc.data">{{dccno}}</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+          </div>
+  </div>
+  <div class="tab-pane fade" id="zones" role="tabpanel" aria-labelledby="zones-tab">
+      <div style="padding-top:10px;padding-left:10px">
+        <h4>5 Zones</h4>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/North_Zone_cricket_team" target="_blank">North Zone</a> (Delhi, Himachal Pradesh, Punjab, Haryana, J&K, Ladakhm, Chandigarh)</li>
+          <li><a href="https://en.wikipedia.org/wiki/East_Zone_cricket_team" target="_blank">East Zone</a> (West bengal, Jharkhand, Bihar, Odisha, Assam, Tripura, Mizoram, Manipur)</li>
+          <li><a href="https://en.wikipedia.org/wiki/South_Zone_cricket_team" target="_blank">South Zone</a> (Telangana, Andhra Pradesh, Kerala, Karnataka, Tamil Nadu)</li>
+          <li><a href="https://en.wikipedia.org/wiki/West_Zone_cricket_team" target="_blank">West Zone</a> (Maharastra, Gujarat, Goa)</li>
+          <li><a href="https://en.wikipedia.org/wiki/Central_Zone_cricket_team" target="_blank">Central Zone</a> (Madhya Pradesh, Uttar Pradesh, Rajasthan, Uttarakhand, Chattisgarh)</li>
+        </ul>
+        <h4 style="padding-top:30px">Who are the Soldiers?</h4>
+        <p>The people & state governments belonging to the zones.</p>
+        <h4 style="padding-top:30px">How to Win the War?</h4>
+        <ul>
+          <li>Stay Home</li>
+          <li>Community Heroes helping people needing food & shelter</li>
+          <li>Helping Government with donations</li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,52 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Helpline Nos</li>
+  </ol>
+</nav>
+<h2>States & UT Helpine Numbers</h2>
+<div class="row"  style="padding-top:20px">
+  <div class="col-sm-6">
+    <div class="card">
+       <div class="card-header">
+        States Helpline Numbers
+      </div>
+      <div class="card-body">
+       <table class="table">
+          <tr>
+             <th scope="col">#</th>
+            <th scope="col">States</th>
+            <th scope="col">Phone No</th>
+          </tr>
+          <tr *ngFor="let state of jsonStates; let i= index;">
+            <th scope="row">{{i+1}}</th>
+            <td>{{state.state}}</td>
+            <td><a href="tel:{{state.number}}">{{state.number}}</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        UT Helpline Numbers
+      </div>
+      <div class="card-body">
+       <table class="table">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Union Territories</th>
+            <th scope="col">Phone No</th>
+          </tr>
+          <tr *ngFor="let ut of jsonUTs; let i= index;">
+            <th scope="col">{{i+1}}</th>
+            <td>{{ut.ut}}</td>
+             <td><a href="tel:{{ut.number}}">{{ut.number}}</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  
