@@ -1,3 +1,3 @@
-# india-fights-corona
+# Covid19 India Tracker Project
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/india-fights-corona)
+[https://india-vs-corona.com](https://india-vs-corona.com)
