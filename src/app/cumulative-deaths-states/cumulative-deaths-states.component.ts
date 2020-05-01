@@ -16,6 +16,7 @@ export class CumulativeDeathsStatesComponent implements OnInit {
   public barChartData: ChartDataSets = [];
   public barChartLabels = [];
   public barChartColors: Color[] = [];
+  
   // constructor
   //
   constructor(private coronaService: IndianStatesService) { }
