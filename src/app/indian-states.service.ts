@@ -226,7 +226,7 @@ export class IndianStatesService {
       { data: this.dailyAssam, label: 'Assam' , fill: false, dth: this.dailyAssamDth },    
       { data: this.dailyJharkhand, label: 'Jharkhand' , dth: this.dailyJharkhandDth },
       { data: this.dailyPuducherry, label: 'Puducherry' , dth: this.dailyPuducherryDth },
-      { data: this.dailyANMIslands, label: 'Andaman & Nicobar Islands' , re: this.dailyANMIslandsDth },       
+      { data: this.dailyANMIslands, label: 'Andaman & Nicobar Islands' , dth: this.dailyANMIslandsDth },       
   ];
 
   // statesName = ['Maharasthra', 'Kerala', 'UP', 'Karnataka', 'Delhi', 'Telangana', 'Gujarat', 'Tamilnadu', 'Rajasthan',
