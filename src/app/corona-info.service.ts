@@ -73,10 +73,10 @@ export class CoronaInfoService {
   daysTookToDouble = [4, 4, 4, 4, 5, 6, 8, 11];
 
   dailyTestingStatus = [
-    { data: [69245, 274599, 401586, 462621, 716733, 770764], label: 'Testing'}, 
-    { data: [2753, 11297, 17615, 18985, 29500, 31332], label: 'Positive Cases'}, 
+    { data: [69245, 274599, 401586, 462621, 716733, 770764, 1276781], label: 'Testing'}, 
+    { data: [2753, 11297, 17615, 18985, 29500, 31332, 49391], label: 'Positive Cases'}, 
   ];
-  dailyTestingInfo = ['03/04', '15/04', '19/04', '21/04', '28/04', '29/04'];
+  dailyTestingInfo = ['03/04', '15/04', '19/04', '21/04', '28/04', '29/04', '06/0'];
 
   constructor() { }
 
