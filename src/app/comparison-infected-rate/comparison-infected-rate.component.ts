@@ -30,7 +30,7 @@ export class ComparisonInfectedRateComponent implements OnInit {
       xAxes: [{
         scaleLabel: {
           display: true,
-          labelString: '35 Days after 1000 infected cases'
+          labelString: '45 Days after 1000 infected cases'
         }
       }]
     }     
