@@ -47,7 +47,7 @@ export class CoronaInfoService {
   // Weekly Line Chart
   //
   // TODO: Update total number of cases that happened last week
-  // Last Week Cumulative: 64 
+  // Last Week Cumulative: 64000 
   // 
   weeklyInfectedHistory = [3, 31, 73, 234, 768, 2469, 4869, 7669, 10801, 13346, 23737];
   weeksInfo = ['24 Feb', '2 Mar', '9 Mar', '16 Mar', '23 Mar', '30 Mar', '6 Apr', '13 Apr', '20 Apr', '27 Apr', '05 May', '11/05'];
@@ -73,10 +73,10 @@ export class CoronaInfoService {
   daysTookToDouble = [4, 4, 4, 4, 5, 6, 8, 11, 11];
 
   dailyTestingStatus = [
-    { data: [69245, 274599, 401586, 462621, 716733, 770764, 1276781, 1437788, 1609037], label: 'Testing'}, 
-    { data: [2753, 11297, 17615, 18985, 29500, 31332, 49391, 56342, 62939], label: 'Positive Cases'}, 
+    { data: [69245, 274599, 401586, 462621, 716733, 770764, 1276781, 1437788, 1609037, 1673688], label: 'Testing'}, 
+    { data: [2753, 11297, 17615, 18985, 29500, 31332, 49391, 56342, 62939, 67152], label: 'Positive Cases'}, 
   ];
-  dailyTestingInfo = ['03/04', '15/04', '19/04', '21/04', '28/04', '29/04', '06/05', '08/05', '10/05'];
+  dailyTestingInfo = ['03/04', '15/04', '19/04', '21/04', '28/04', '29/04', '06/05', '08/05', '10/05',];
 
   constructor() { }
 
